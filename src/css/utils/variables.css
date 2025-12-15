@@ -1,0 +1,95 @@
+/* =========================
+   DESIGN SYSTEM VARIABLES
+   ========================= */
+
+:root {
+
+  /* ---------- COLORS ---------- */
+
+  /* Backgrounds */
+  --color-bg-main: #2A2725;        /* Charcoal Brown */
+  --color-bg-secondary: #261F22;   /* Aubergine Shadow */
+  --color-bg-dark: #25151B;        /* Dark Plum */
+
+  /* Accents */
+  --color-accent-primary: #301010; /* Wine Brown */
+  --color-accent-secondary: #2E5C4F; /* Deep Teal */
+  --color-accent-menu: #602F42;    /* Mulberry */
+
+  /* Decorative */
+  --color-frame: #462600;          /* Bronze Frame */
+  --color-gold: #C19A6B;           /* Gold Sand */
+  --color-gold-soft: #EBD6A9;      /* Soft Gold */
+
+  /* Text */
+  --color-text-main: #C9C5BA;      /* Stone Beige */
+  --color-text-dark: #2A2725;
+
+
+  /* ---------- TYPOGRAPHY ---------- */
+
+  /* Font families */
+  --ff-title: 'Work Sans', sans-serif;
+  --ff-text: 'Inter', sans-serif;
+  --ff-decorative: 'Cormorant Garamond', serif;
+
+  /* Font sizes */
+  --fs-xs: 0.625rem;   /* 10px */
+  --fs-sm: 0.75rem;    /* 12px */
+  --fs-base: 1rem;     /* 16px */
+  --fs-md: 1.125rem;   /* 18px */
+  --fs-lg: 1.3125rem;  /* 21px */
+  --fs-xl: 1.5rem;     /* 24px */
+  --fs-h3: 1.75rem;
+  --fs-h2: 2.25rem;
+
+  /* Font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+
+  /* ---------- BORDERS & RADII ---------- */
+
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12.43px;
+  --radius-xl: 14.2px;
+  --radius-xxl: 19.53px;
+
+  --border-thin: 1px;
+  --border-thick: 5.326px;
+
+
+  /* ---------- GRADIENTS ---------- */
+
+  --gradient-menu: linear-gradient(
+    90deg,
+    #25151B 0%,
+    #25151B 61.06%,
+    #602F42 80.29%,
+    #25151B 94.23%,
+    #25151B 100%
+  );
+
+  --gradient-gold: linear-gradient(
+    90deg,
+    #C19A6B 0%,
+    #EBD6A9 100%
+  );
+
+  --gradient-border-gold: linear-gradient(
+    90deg,
+    #392D1F 0%,
+    #5C462B 81%,
+    #C19A6B 100%
+  );
+
+
+  /* ---------- SHADOWS ---------- */
+
+  --shadow-glow-gold: 0 0 9.209px rgba(255, 208, 121, 0.25);
+
+}

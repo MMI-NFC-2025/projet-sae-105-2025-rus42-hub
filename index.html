@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Effet Matilda</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <img src="img/logo/logo.png" alt="Logo du projet Effet Matilda" class="header__logo">
+
+    <h1 class="header__title">Effet Matilda</h1>
+
+    <button class="header__menu-btn" aria-label="Ouvrir le menu">
+      <img src="img/icons/menu.png" alt="">
+    </button>
+  </div>
+
+  <nav class="menu" aria-hidden="true">
+    <ul class="menu__list">
+      <li><a href="#" class="menu__link">Accueil</a></li>
+      <li><a href="#" class="menu__link">Articles</a></li>
+      <li><a href="#" class="menu__link">Glossaire</a></li>
+      <li><a href="#" class="menu__link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="img/images/Sofia.png" alt="Portrait de Sofia Kovalevskaïa" class="hero__image">
+
+    <div class="hero__dialogue">
+      <img src="img/banners/Frame-dialogue.png" alt="" class="hero__frame">
+      <p class="hero__text" id="heroText"></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2 class="about__name">Sofia Kovalevskaïa</h2>
+    <p class="about__subtitle">Mathématicienne, pionnière</p>
+
+    <img src="img/icons/ligne.png" alt="" class="about__divider">
+
+    <button class="about__button">
+      <span class="about__button-text">Découvrir son histoire</span>
+    </button>
+
+    <article class="story">
+      <p class="story__text">
+        Depuis l’Antiquité, la femme a été destinée à garder le foyer.
+        <br><br>
+        Mais un jour, elles sont apparues — celles qui refusaient ce destin.
+        <br><br>
+        Parmi elles — Sofia Kovalevskaïa.
+      </p>
+    </article>
+  </section>
+
+  <!-- MATILDA -->
+  <section class="matilda">
+    <article class="matilda__definition">
+      <p>
+        <strong>L’Effet Matilda</strong> désigne le phénomène par lequel
+        les découvertes des femmes scientifiques ont été attribuées
+        à leurs collègues masculins.
+      </p>
+    </article>
+
+    <h2 class="matilda__title">Frise des Matilda</h2>
+  </section>
+
+  <!-- FRISE -->
+  <section class="timeline">
+
+    <article class="timeline__item">
+      <img src="img/images/Ada.png" alt="Ada Lovelace" class="timeline__image">
+      <h3 class="timeline__name">Ada Lovelace</h3>
+      <p class="timeline__era">XIXe siècle</p>
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <span class="visually-hidden">Afficher plus d’informations</span>
+      </button>
+
+      <div class="timeline__content">
+        <p>Elle invente la programmation, mais on l’oublie longtemps.</p>
+      </div>
+    </article>
+
+    <!-- autres items identiques -->
+  </section>
+
+</main>
+
+<footer class="footer">
+  <img src="img/logo/logo.png" alt="" class="footer__logo">
+
+  <p class="footer__text">
+    Projet réalisé en 2025 au département
+    <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">
+      MMi de Montbéliard
+    </a>
+  </p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
