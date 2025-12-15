@@ -14,5 +14,7 @@
 @import "/src/css/components/menu.css";
 @import "/src/css/components/hero.css";
 
+
 /* Pages */
+@import "/src/css/pages/home.css";
 @import "/src/css/pages/about.css";
