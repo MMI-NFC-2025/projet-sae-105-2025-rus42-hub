@@ -3,12 +3,12 @@
    ========================= */
 
 /* ---------- HERO ---------- */
-/* === Фон страницы === */
+/* === background === */
 body {
   background: #131108;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* убираем скролл вправо */
+  overflow-x: hidden; 
   font-family: var(--ff-text);
 }
 
@@ -28,12 +28,12 @@ body {
   display: block;
 }
 
-/* Плашка под текст */
+/* Frame */
 .hero__dialogue {
   position: absolute;
   top: 367px;  
   left: 21px;  
-  width: 210px;  /* чуть увеличили */
+  width: 210px; 
   height: 73px;
 }
 
@@ -44,20 +44,20 @@ body {
   object-fit: contain;
 }
 
-/* Текст на плашке */
+/* Texte sur frame */
 .hero__text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);  
-  width: 100%; /* теперь текст полностью по ширине плашки */
+  width: 100%; 
   color: #EBD6A9;
   font-family: var(--ff-decorative);
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
-  text-align: center; /* теперь по центру плашки */
+  text-align: center; 
   margin: 0;
   pointer-events: none;
 }
