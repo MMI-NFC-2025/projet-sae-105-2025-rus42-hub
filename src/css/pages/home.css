@@ -2,7 +2,7 @@
    HOME PAGE COMPONENTS
    ========================= */
 
-/* ---------- HERO ---------- */
+
 /* === background === */
 body {
   background: #131108;
@@ -12,52 +12,75 @@ body {
   font-family: var(--ff-text);
 }
 
-/* === HERO === */
+
 /* === HERO === */
 .hero {
   position: relative;
   width: 100%;
   max-width: 393px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
+/* Контейнер для обрезки */
+.hero__media {
+  position: relative;
+  width: 100%;
+  height: 502px;              /* вот тут обрезка */
+  overflow: hidden;
+}
+
+/* Само фото */
 .hero__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
   display: block;
+}
+
+/* Градиент поверх фото */
+.hero__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 46.49%,
+    #000 100%
+  );
+  pointer-events: none;
 }
 
 /* Frame */
 .hero__dialogue {
   position: absolute;
-  top: 367px;  
-  left: 21px;  
-  width: 210px; 
+  top: 367px;
+  left: 21px;
+  width: 210px;
   height: 73px;
 }
 
+/* Рамка */
 .hero__frame {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: contain;
+  display: block;
 }
 
-/* Texte sur frame */
+/* Текст */
 .hero__text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  width: 100%; 
-  color: #EBD6A9;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-family: var(--ff-decorative);
-  font-style: italic;
-  font-weight: 400;
   font-size: 18px;
+  font-style: italic;
   line-height: 1.4;
-  text-align: center; 
+  color: var(--color-gold-soft);
+  text-align: center;
   margin: 0;
   pointer-events: none;
 }
@@ -68,7 +91,7 @@ body {
 .about {
   width: 100%;
   background-color: var(--color-bg-main);
-  padding: 32px 16px;
+  padding: 1px 16px;
   box-sizing: border-box;
   position: relative;
 }
@@ -80,7 +103,8 @@ body {
   font-family: var(--ff-text);
   font-size: var(--fs-base);
   font-weight: var(--fw-bold);
-  margin: 0;
+  margin-top: 27px;
+  
 }
 
 /* Sous-titre */
@@ -182,4 +206,248 @@ body {
   height: auto;
   margin: 24px auto 32px;
   display: block;
+}
+
+
+
+/* ---------- MATILDA ---------- */
+.matilda {
+    padding: 32px 16px;
+  text-align: center;
+}
+
+
+/* Texte et le banner */
+.matilda__definition {
+  background-color: var(--color-accent-secondary);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+  margin: 0 auto 24px auto;
+  max-width: 363px;
+  box-sizing: border-box;
+}
+
+.matilda__definition p {
+  margin: 0;
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  line-height: 1.29;
+  color: var(--color-text-main);
+  text-align: left;
+}
+
+/* weight parti */
+.matilda__definition strong {
+  font-weight: var(--fw-bold);
+}
+
+/* Titre de nouveau section */
+.matilda__title {
+    /* расстояние ОТ плашки Матильды */
+  margin-bottom: 7px; /* расстояние ДО таймлайна */
+  color: var(--color-gold-soft);
+  font-family: var(--ff-text);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  line-height: 1.29;
+  text-align: center;
+}
+
+
+
+
+
+/* === TIMELINE === */
+
+/* ligne */
+
+
+.timeline {
+  position: relative;
+  max-width: 393px;
+  margin: 0 auto;
+  
+}
+
+/* Пунктирная линия — АВТО */
+.timeline__line {
+  position: absolute;
+  top: 120px; 
+  bottom: 100px; 
+  left: 50%;
+
+  border-left: 1px dashed rgba(46, 92, 79, 0.69);
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+
+/* Один блок */
+.timeline__item {
+  text-align: center;
+  margin-bottom: 56px;
+  position: relative;
+}
+
+/* Обертка фото + кнопка */
+.timeline__media {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Фото */
+.timeline__image {
+  width: 167px;
+  height: 167px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Кнопка expand */
+.timeline__toggle {
+  position: absolute;
+  top: 50%;
+  right: -60px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.timeline__toggle img {
+  width: 15px;
+  height: 9px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Имя */
+.timeline__name {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: var(--color-gold-soft);
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+}
+
+/* Эпоха */
+.timeline__era {
+  margin: 0;
+  color: var(--color-text-light);
+  font-family: var(--ff-text);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-light);
+  line-height: 1.29;
+}
+
+/* Всплывающая плашка */
+.timeline__expand {
+  position: absolute;
+  top: calc(30% + 28px);
+  right: -5px;
+  width: 150px;
+  display: none;
+}
+
+.timeline__expand-bg {
+  width: 100%;
+  display: block;
+}
+
+.timeline__expand-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+
+  text-align: center;
+  color: var(--color-gold-soft);
+  font-family: var(--ff-decorative);
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.15;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- STARS SECTION ---------- */
+.stars-section {
+  margin-top: var(--spacing-md, 46px); /* можно подкорректировать */
+  text-align: center;
+}
+
+/* Ряд звезд */
+.stars-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm, 18px); /* расстояние между звездами */
+  margin-bottom: var(--spacing-md, 21.79px); /* отступ до кнопки */
+}
+
+/* Размеры звезд */
+.star {
+  display: block;
+}
+.star--big {
+  width: 15px;
+  height: 15px;
+}
+.star--small {
+  width: 6.8px;
+  height: 6.8px;
+}
+
+/* Кнопка */
+.stars-btn {
+  position: relative;
+  display: inline-block;
+  width: 60%;               /* адаптивно */
+  max-width: 232px;         /* макет */
+  aspect-ratio: 232 / 63;   /* сохраняем пропорции */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.stars-btn-bg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars-btn-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-text);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-regular);
+  color: var(--color-gold-soft);
+  text-align: center;
+  pointer-events: none;
+}
+
+/* Effet click */
+.stars-btn:active,
+.stars-btn-bg:active {
+  filter: brightness(0.7);
 }

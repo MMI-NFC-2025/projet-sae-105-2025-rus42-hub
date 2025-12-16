@@ -17,6 +17,9 @@
 
 <body>
 
+
+
+    
 <header class="header">
   <div class="header__inner">
     <img src="/assets/img/logo.svg" alt="logo" class="header__logo">
@@ -33,18 +36,70 @@
 
 
 
+<!-- MENU OVERLAY -->
+<div class="menu" id="menuContainer">
+
+  <!-- LANG + CLOSE -->
+  <div class="menu__top">
+    <div class="menu__lang">
+      <button class="menu__lang-btn is-active">FR</button>
+      <button class="menu__lang-btn">EN</button>
+    </div>
+
+    <button class="menu__close" id="closeMenuBtn">
+      <img src="/assets/icons/close.svg" alt="Fermer">
+    </button>
+  </div>
+
+  <!-- SPACE 34px -->
+  <div class="menu__spacer"></div>
+
+  <!-- NAV -->
+<nav class="menu__nav">
+  <a class="menu__item" href="#">Accueil</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">À propos</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">Sofia Kovalevskaïa</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">Articles</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">Films & Vidéos</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">Autres projets</a>
+  <span class="menu__divider"></span>
+
+  <a class="menu__item" href="#">Contact</a>
+</nav>
+
+
+</div>
+
+
+
+
 
 <main>
 
-  <!-- HERO -->
 <section class="hero">
-  <img src="/assets/img/Sofia.webp" alt="Portrait de Sofia Kovalevskaïa" class="hero__image">
+  <div class="hero__media">
+    <img src="/assets/img/Sofia.webp" alt="Sofia Kovalevskaïa" class="hero__image">
+    <div class="hero__gradient"></div>
+  </div>
 
   <div class="hero__dialogue">
-    <img src="/assets/banners/Frame-dialogue.svg" alt="" class="hero__frame">
+    <img src="/assets/banners/frame-dialogue.svg" alt="" class="hero__frame">
     <p class="hero__text" id="heroText"></p>
   </div>
 </section>
+
+
+
 
   <section class="about">
   <h2 class="about__name">Sofia Kovalevskaïa</h2>
@@ -89,28 +144,167 @@
       </p>
     </article>
 
-    <h2 class="matilda__title">Frise des Matilda</h2>
+
   </section>
 
-  <!-- FRISE -->
-  <section class="timeline">
 
-    <article class="timeline__item">
+  <!-- TITRE DE LA FRISE -->
+<h2 id="timeline-title" class="matilda__title">
+  Frise des Matilda
+</h2>
+
+
+
+<!-- FRISE / TIMELINE -->
+<section class="timeline">
+    
+
+  <div class="timeline__line"></div>
+
+  <article class="timeline__item">
+    <div class="timeline__media">
       <img src="/assets/img/ada.webp" alt="Ada Lovelace" class="timeline__image">
-      <h3 class="timeline__name">Ada Lovelace</h3>
-      <p class="timeline__era">XIXe siècle</p>
 
       <button class="timeline__toggle" aria-expanded="false">
-        <span class="visually-hidden">Afficher plus d’informations</span>
+        <img src="/assets/icons/expand.svg" alt="">
       </button>
+    </div>
 
-      <div class="timeline__content">
-        <p>Elle invente la programmation, mais on l’oublie longtemps.</p>
-      </div>
-    </article>
+    <h3 class="timeline__name">Ada Lovelace</h3>
+    <p class="timeline__era">Milieu XIXe</p>
 
-    <!-- autres items identiques -->
-  </section>
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+            Elle invente la <br>
+        programmation, mais on <br>
+        l'oublie longtemps
+      </p>
+    </div>
+  </article>
+
+  
+  
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Mileva.webp" alt="Mileva Marić" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Mileva Marić</h3>
+    <p class="timeline__era">Début XXe</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+        Elle collabore avec<br>
+        Einstein, mais son nom<br>
+        disparaît
+      </p>
+    </div>
+  </article>
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Lise.webp" alt="Lise Meitner" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Lise Meitner</h3>
+    <p class="timeline__era">1930-40s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+           Elle découvre la fission,<br>
+        mais son collègue reçoit le<br>
+        Nobel
+      </p>
+    </div>
+  </article>
+
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Rosalind.webp" alt="Rosalind Franklin" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Rosalind Franklin</h3>
+    <p class="timeline__era">1950s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+      Elle photographie l'ADN,<br>
+        mais on lui vole la gloire
+      </p>
+    </div>
+  </article>
+
+
+
+
+
+    <article class="timeline__item">
+    <div class="timeline__media">
+      <img src="/assets/img/Jocelyn.webp" alt="Jocelyn Bell Burnell" class="timeline__image">
+
+      <button class="timeline__toggle" aria-expanded="false">
+        <img src="/assets/icons/expand.svg" alt="">
+      </button>
+    </div>
+
+    <h3 class="timeline__name">Jocelyn Bell Burnell</h3>
+    <p class="timeline__era">1960s</p>
+
+    <div class="timeline__expand">
+      <img src="/assets/banners/frame-expand.svg" alt="" class="timeline__expand-bg">
+      <p class="timeline__expand-text">
+      Elle découvre les pulsars,<br>
+        mais son directeur reçoit<br>
+        le prix
+      </p>
+    </div>
+  </article>
+  
+</section>
+
+
+  
+
+<!-- STARS SECTION -->
+<section class="stars-section">
+  <div class="stars-row">
+    <img src="/assets/icons/etoile.svg" class="star star--small" alt="">
+    <img src="/assets/icons/etoile.svg" class="star star--big" alt="">
+    <img src="/assets/icons/etoile.svg" class="star star--small" alt="">
+  </div>
+
+  <button class="stars-btn">
+    <img src="/assets/banners/Frame-bouton.svg" alt="button frame" class="stars-btn-bg">
+    <span class="stars-btn-text">Découvrir les articles</span>
+  </button>
+</section>
+
+
+
+
+
+
 
 </main>
 

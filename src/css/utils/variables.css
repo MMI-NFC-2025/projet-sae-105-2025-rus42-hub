@@ -21,10 +21,12 @@
   --color-frame: #462600;          /* Bronze Frame */
   --color-gold: #C19A6B;           /* Gold Sand */
   --color-gold-soft: #EBD6A9;      /* Soft Gold */
+  --color-frame-dark: #25151B;    /* Dark Plum */
 
   /* Text */
   --color-text-main: #C9C5BA;      /* Stone Beige */
   --color-text-dark: #2A2725;
+  --color-text-light: #F6E0A7;   /* Light Gold */
 
 
   /* ---------- TYPOGRAPHY ---------- */
