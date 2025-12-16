@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
       textElement.innerHTML = texts[index];
       index = (index + 1) % texts.length;
     }
-    changeText(); // первый показ сразу
-    setInterval(changeText, 3000); // смена каждые 3 сек
+    changeText();
+    setInterval(changeText, 3000); // change chaque 3 secondes
   }
 });
 
