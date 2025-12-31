@@ -139,8 +139,7 @@
 .page-films {
   max-width: 393px;
   margin: 0 auto;
-  padding-left: 53px;
-  padding-right: 27px;
+
 }
 
 /* Nom de la page */
@@ -240,6 +239,7 @@
 
 .film-card {
   margin-top: 42px; /* space at the top of the card */
+  padding-left: 42px;
   display: flex;
   flex-direction: column;
 }
@@ -356,4 +356,198 @@
   line-height: 1.29168;
   color: var(--color-text-main);
   margin-bottom: 18px;
+}
+
+
+/* ======= Videos intro section ======= */
+
+.videos-intro {
+  margin-top: 59px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ligne */
+.videos-intro__divider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px; 
+}
+
+
+.videos-intro__divider img {
+  display: block;
+}
+
+/* Заголовок */
+.videos-intro__title {
+  width: 241px;
+  height: 62px;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-xl); /* 24px */
+  font-weight: var(--fw-bold);
+  line-height: 1.29168;
+
+  text-align: center;
+  color: var(--color-text-main);
+
+  margin-bottom: 14px; /* логичный визуальный gap */
+}
+
+/* Описание */
+.videos-intro__text {
+  width: 333px;
+  height: 39px;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-base); /* 16px */
+  font-weight: var(--fw-regular);
+  line-height: 1.29168;
+  letter-spacing: -0.16px;
+
+  text-align: center;
+  color: var(--color-text-main);
+}
+
+
+
+
+
+
+/* ======= Video carousel ======= */
+.video-carousel {
+  margin-top: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-carousel__viewport {
+  width: 690px;
+  overflow: visible;
+  position: relative;
+}
+
+/* Drop shadow */
+.video-card::before {
+  content: '';
+  position: absolute;
+  
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 12px;
+  background: rgba(37, 21, 27, 0.8);
+  filter: blur(8px);
+  
+  z-index: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.video-card.is-active::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.video-carousel__track {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.video-card {
+  width: 230px;
+  height: 162px;
+  background: #000;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  position: relative;
+}
+
+.video-card.is-active {
+  box-shadow: 0 2.22px 8.52px rgba(37, 21, 27, 0.8);
+  z-index: 2;
+}
+
+.video-card:not(.is-active) {
+  transform: scale(0.74);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* ===== Video frame ===== */
+.video-frame {
+  width: 100%;
+  height: 129px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  position: relative;
+}
+
+.video-frame img,
+.video-frame iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Video title ===== */
+.video-title {
+  width: 221px;
+  height: 30px;
+  background: #000; /* Frame background */
+  color: #fff;
+  font-family: var(--ff-text);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.29168;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 auto;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Carousel controls ===== */
+.video-carousel__controls {
+  margin-top: 24px;
+  display: flex;
+  gap: 64px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.carousel-btn.prev img {
+  transform: rotate(90deg);
+}
+
+.carousel-btn.next img {
+  transform: rotate(-90deg);
+}
+
+/* ===== Optional: Backlight effect ===== */
+.video-card.is-active {
+  box-shadow: 0 2.22px 8.52px rgba(37, 21, 27, 0.8);
+  border-radius: 8px;
 }
