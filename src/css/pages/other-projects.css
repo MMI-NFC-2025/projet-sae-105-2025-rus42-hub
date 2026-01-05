@@ -1,0 +1,57 @@
+/* ======= Other projects container ======= */
+
+.other-projects {
+  width: 352px;
+  margin: 27px auto 19px;
+  background: var(--color-bg-dark);
+  border-radius: var(--radius-md);
+}
+
+.other-projects__inner {
+  padding: 33px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ======= Project card ======= */
+
+.project-card {
+  width: 188px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image wrapper */
+.project-card__image {
+  width: 188px;
+  height: 188px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+/* Image itself */
+.project-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: top;
+}
+
+/* Title */
+.project-card__title {
+  margin-top: 19px;
+  width: 188px;
+  text-align: center;
+  font-family: var(--ff-text);
+  font-size: 1.0625rem; /* ~17px */
+  font-weight: var(--fw-bold);
+  line-height: 1.29168;
+  color: var(--color-gold-soft);
+}
