@@ -5,22 +5,7 @@
   flex-direction: column;
 }
 
-/* Title page */
-.articles-page__title {
-  margin-top: 28px;
-  margin-left: 27px;
-  margin-bottom: 25px;
 
-  width: 220px;
-  height: 26px;
-
-  font-family: var(--ff-text);
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-semibold);
-  line-height: 1.29168;
-
-  color: var(--color-text-main);
-}
 
 /* ======= Article card ======= */
 
@@ -50,8 +35,8 @@
   margin-top: 9px;
   margin-left: 20px;
 
-  width: 350px;
-  max-width: calc(100% - 40px);
+  width: 357px;
+  max-width: calc(100% - 36px);
 
   font-family: var(--ff-text);
   font-size: 1.0625rem; /* 17px */
@@ -88,7 +73,7 @@
 
   margin-top: -10px;
   padding-right: 16px;
-  margin-bottom: 17px;
+  
 }
 
 .article-card__button {
@@ -124,3 +109,7 @@
   border-radius: var(--radius-md);
 }
 
+
+.section--end {
+  margin-bottom: 67px;
+}

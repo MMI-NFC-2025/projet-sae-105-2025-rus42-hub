@@ -92,7 +92,57 @@
 
 <main>
 
+ <h1 class="page-title">
+    Contact Us
+  </h1>
 
+  <section class="contact">
+
+  <p class="contact__intro">
+    Would you like to learn more about the project or share an idea?
+    Write to us — your message will be read with care.
+  </p>
+
+  <form class="contact-form"
+        action="mailto:contact.effetdetilde@gmail.com"
+        method="post"
+        enctype="text/plain"
+        autocomplete="on">
+
+    <div class="contact-form__field">
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Exemple : Marie" required>
+    </div>
+
+    <div class="contact-form__field">
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email"
+             placeholder="exemple@effetdetilde.fr" required>
+    </div>
+
+    <div class="contact-form__field">
+      <label for="phone">Phone number</label>
+      <input type="tel" id="phone" name="phone"
+             placeholder="+33 6 12 34 56 78">
+    </div>
+
+
+
+
+    <div class="contact-form__field contact-form__field--message">
+      <textarea id="message" name="message"
+            placeholder="Your message…"
+            required></textarea>
+    </div>
+
+
+    <button type="submit" class="contact-form__submit">
+      Send
+    </button>
+
+  </form>
+
+</section>
 
 
 

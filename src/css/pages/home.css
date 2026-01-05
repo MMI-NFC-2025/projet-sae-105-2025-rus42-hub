@@ -395,6 +395,7 @@ body {
 .stars-section {
   margin-top: var(--spacing-md, 46px);
   text-align: center;
+  margin-bottom: 63px;
 }
 
 /* Etoiles*/

@@ -1,0 +1,12 @@
+.page-title {
+  margin-top: 28px;
+  margin-left: 27px;
+  margin-bottom: 0;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
+  line-height: 1.29168;
+
+  color: var(--color-text-main);
+}
