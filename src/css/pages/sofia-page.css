@@ -1,0 +1,57 @@
+/* Lignes decoratives */
+.sofia__divider {
+  display: block;
+  width: 350px;
+  margin: 24px auto 0;
+}
+
+
+.sofia__meta {
+
+  margin: 56px auto 0;
+  font-family: var(--ff-text);
+  font-size: 11px;
+  font-weight: var(--fw-regular);
+  line-height: 1.29168;
+  color: var(--color-text-main);
+}
+
+/* ======= Discover button section ======= */
+
+.discover-section {
+  margin-top: 43px;
+  margin-bottom: 61px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button */
+.discover-button {
+  width: 233px;
+  height: 79px;
+
+  background: var(--color-accent-secondary);
+  border: 1px solid #CCC;
+  border-radius: var(--radius-sm);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Text */
+.discover-button__text {
+  width: 204px;
+  height: 41px;
+
+  font-family: var(--ff-text);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-regular);
+  line-height: 1.29168;
+
+  text-align: center;
+  color: var(--color-text-main);
+}
